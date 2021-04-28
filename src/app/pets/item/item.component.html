@@ -1,0 +1,12 @@
+<p>item works!</p>
+<ng-container *ngIf="source; else nada">
+    {{ source.id }}
+    {{ source.category }}
+    {{ source.name }}
+    {{ source.photoUrls }}
+    {{ source.tags }}
+    {{ source.status }}
+</ng-container>
+<ng-template #nada>
+    Não há item selecionado
+</ng-template>

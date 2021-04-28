@@ -1,0 +1,6 @@
+<div *ngFor="let pet of lista" (click)="itemSelecionado.emit(pet)">
+    <h1>{{pet.name}}</h1>
+    <p *ngFor= "let tag of pet.tags"> 
+        {{ tag.name }}
+    </p>
+</div> 
