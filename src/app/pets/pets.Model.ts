@@ -1,11 +1,11 @@
 export interface PetModel
 {
-    id: string;
-    category: any;
-    name: string;
-    photoUrls: any[];
-    tags: any;
-    status: 'available' | 'pending' | 'sold';
+    id?: string;
+    category?: any;
+    name?: string;
+    photoUrls?: any[];
+    tags?: any;
+    status?: 'available' | 'pending' | 'sold';
 }
 
 export class category {

@@ -7,8 +7,10 @@ import { PetsService } from '../pets.service';
   templateUrl: './lista.component.html',
   styleUrls: ['./lista.component.scss']
 })
+
+
 export class ListaComponent implements OnInit {
-  lista?: PetModel[];
+  lista: PetModel[]=[];
   @Output()
   itemSelecionado: EventEmitter<PetModel> = new EventEmitter();
   constructor(private PetStore: PetsService) { }
@@ -17,5 +19,8 @@ export class ListaComponent implements OnInit {
     this.lista = await this.PetStore.findByStatus('available');
     console.log(this.lista);
   }
+
+  displayedColumns: string[] = ['id','name'];
+   
 
 }

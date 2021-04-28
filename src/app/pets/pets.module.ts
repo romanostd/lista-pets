@@ -5,6 +5,8 @@ import { ItemComponent } from './item/item.component';
 import { PetsRoutingModule } from './pets-routing.module';
 import { PetsComponent } from './pets.component';
 import {MatTableModule} from '@angular/material/table';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -18,7 +20,8 @@ import {MatTableModule} from '@angular/material/table';
   imports: [
     CommonModule,
     PetsRoutingModule,
-    MatTableModule
+    MatTableModule,
+    ReactiveFormsModule
 
   ]
 })

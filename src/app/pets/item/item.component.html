@@ -1,5 +1,11 @@
 <p>item works!</p>
+
 <ng-container *ngIf="source; else nada">
+    <form [formGroup]="form">
+        <p>id: {{ source.id</p>
+        <input type="text" formControlName="name">
+        <button (click)="save()">salvar</button>
+    </form>
     {{ source.id }}
     {{ source.category }}
     {{ source.name }}
